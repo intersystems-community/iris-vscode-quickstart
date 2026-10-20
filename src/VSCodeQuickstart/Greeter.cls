@@ -11,6 +11,7 @@ ClassMethod Run()
 {
     set greeting = ..Greet("IRIS")
     write greeting, !
+    set ^VSCodeQuickstart.LastGreeting = greeting
     set ^VSCodeQuickstart.RunCompleted = $ZDT($H, 3)
     quit
 }
